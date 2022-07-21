@@ -43,7 +43,7 @@ public class คนคุก
         if (Active)
         {
             var o = RealLogic.DoOperaton(input);
-            o.outValue = "แล้วคุณจะรู้มั้ย ว่าเค้าจะเล่นคุณ!";
+            //o.outValue = "แล้วคุณจะรู้มั้ย ว่าเค้าจะเล่นคุณ!";
             return o;
         }
         else

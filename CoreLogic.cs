@@ -14,7 +14,7 @@ public class CoreLogic
     }
     public CoreOutput DoOperaton(CoreInput i){
 
-        return new CoreOutput("");
+        return new CoreOutput( i.inputVal1);
     }
 
 
