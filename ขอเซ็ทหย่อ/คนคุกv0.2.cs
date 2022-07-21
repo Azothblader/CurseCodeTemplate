@@ -42,13 +42,14 @@ public class คนคุก
     {
         if (Active)
         {
+            Active = false;
             var o = RealLogic.DoOperaton(input);
             //o.outValue = "แล้วคุณจะรู้มั้ย ว่าเค้าจะเล่นคุณ!";
             return o;
         }
         else
         {
-            throw new Exception("Invalid Operation");
+            throw new Exception("รหัสลับไม่ถูกต้อง");
         }
     }
 
