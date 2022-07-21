@@ -31,6 +31,21 @@ Console.WriteLine("Test : ขอเซ็ทหย่อ using v0.2");
      ( x ) => { var ไข่3 = x; return นักโทษ.ขอเซ็ทหย่อ.สู่ต่อ.ซูดผ่อ.ซีหม่อ.สองห่อ.ใส่(ไข่3);};
     Console.WriteLine("   #3 : " + tempF(ไข่1).outValue );
 
+    // #4 Prevent Wrong order 
+    นักโทษ.ขอเซ็ทหย่อ.สู่ต่อ.ซูดผ่อ.ซีหม่อ.สองห่อ.ใส่(ไข่1); //set -  Active flag= true;
+    นักโทษ.ขอเซ็ทหย่อ.สู่ต่อ.ซูดผ่อ.ซีหม่อ.สองห่อ.ใส่(ไข่1); //set - Active flag= true;
+    try{
+             นักโทษ.ขอเซ็ทหย่อ.สู่ต่อ.ซูดผ่อ.ซีหม่อ.ใส่(ไข่1); 
+    } catch(Exception e){
+         Console.WriteLine("   #4_1 : Success , throwing exception = " + e.ToString() );
+    }
+    นักโทษ.ขอเซ็ทหย่อ.สู่ต่อ.ซูดผ่อ.ซีหม่อ.สองห่อ.ใส่(ไข่1);  //set - Active flag= true;
+    try{
+             นักโทษ.ใส่(ไข่1);
+    } catch(Exception e){
+         Console.WriteLine("   #4_2 : Success , throwing exception = " + e.ToString() );
+    }
+
 #endregion
 
 
