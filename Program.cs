@@ -28,7 +28,7 @@ Console.WriteLine("Test : ขอเซ็ทหย่อ using v0.2");
     Console.WriteLine("   #2 : " + serviceResult.outValue);
     // #3
     Func< CoreLogic.CoreInput, CoreLogic.CoreOutput> tempF =
-     ( x ) => {return นักโทษ.ขอเซ็ทหย่อ.สู่ต่อ.ซูดผ่อ.ซีหม่อ.สองห่อ.ใส่(x);};
+     ( x ) => { var ไข่3 = x; return นักโทษ.ขอเซ็ทหย่อ.สู่ต่อ.ซูดผ่อ.ซีหม่อ.สองห่อ.ใส่(ไข่3);};
     Console.WriteLine("   #3 : " + tempF(ไข่1).outValue );
 
 #endregion
